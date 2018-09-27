@@ -3,13 +3,44 @@
 
 int main(void)
 {
-    int zahl;
+    int h;
 
     do {
-        zahl = get_int("num: ");
-    } while(zahl < 0 || zahl > 23);
-    printf("hello\n");
+        h=get_int("num: ");
+    } while(h < 0 || h>23);
+    printf("\n");
+
+
+  int m = 2;
+
+//print spaces counting down
+
+while (h>0)
+    {
+        for (int k=0; k<h-1; k++)
+        {
+            printf(" ");
+        }
+
+        //change this to the format of the for loop above
+
+
+         for (int i = 0; i<m; i++)
+                {
+                    printf("#");
+                }
+
+
+        m++;
+        h=h-1;
+        printf("\n");
+
+    }
+
+
 }
+
+
 
 
 
