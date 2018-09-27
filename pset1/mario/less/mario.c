@@ -2,6 +2,8 @@
 #include <cs50.h>
 
 int main(void)
+
+//checks the input value to be between 0 and 23 and prompts the user to put in value again, if not in this range
 {
     int h;
 
@@ -11,32 +13,37 @@ int main(void)
     printf("\n");
 
 
-  int m = 2;
+    //number of hashes to begin with.
+      int m = 2;
 
-//print spaces counting down
 
-while (h>0)
-    {
-        for (int k=0; k<h-1; k++)
+    //While Loop takes care of the number of rows to be printed
+
+    while (h>0)
         {
-            printf(" ");
-        }
 
-        //change this to the format of the for loop above
-
-
-         for (int i = 0; i<m; i++)
-                {
-                    printf("#");
-                }
+            //prints number of spaces decreasing by one woth each interation of the while loop
+            for (int k=0; k<h-1; k++)
+            {
+                printf(" ");
+            }
 
 
+            //prints the hashes starting by two,
+             for (int i = 0; i<m; i++)
+                    {
+                        printf("#");
+                    }
+
+        //increases by one with each interation of the while loop
         m++;
+
+        //decreases h with each iteration of the while loop, untill h=0 is reached
         h=h-1;
+
         printf("\n");
 
     }
-
 
 }
 
