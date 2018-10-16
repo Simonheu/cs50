@@ -37,17 +37,13 @@ int main(int argc, string argv[]){
     //Convert from Ascii Value to Alphabetical Value and add key
     for (int i = 0, n = strlen(p); i < n; i++)
     {
-        cypherlatteralpha = (((int) p[i] - 65)+key) %26;
-        printf("Cyphervalue in Alphabetical Value: %i\n", cypherlatteralpha);
-    }
-
-    printf("\n");
+    cypherlatteralpha = (((int) p[i] - 65)+key) %26;
+    printf("Cyphervalue in Alphabetical Value: %i\n", cypherlatteralpha);
 
     //reconvert from Alphaletter to Ascii value
-    for (int i = 0, n = strlen(p); i < n; i++)
-    {
-       int cypherlatterasci = cypherlatteralpha +65;
-        printf("Cyphervalue in Asci Value: %i\n",cypherlatterasci);
+    int cypherlatterasci = cypherlatteralpha +65;
+    printf("Cyphervalue in Asci Value: %i\n",cypherlatterasci);
     }
+
 
 }

@@ -29,17 +29,10 @@ int main(int argc, string argv[]){
     printf("%c %i \n", p[i], (int) p[i] );
 
     }
-
     printf("\n");
-
-    if
-
 
     for (int i = 0, n = strlen(p); i < n; i++)
     {
-
-    ifuppe
-
     printf ("%c %i\n", p[i] +2, (int) p[i]+2);
     }
 
