@@ -1,3 +1,5 @@
+//Encrypter only put capital latters and no space
+
 #include <stdio.h>
 #include <cs50.h>
 #include <ctype.h>
@@ -41,8 +43,8 @@ int main(int argc, string argv[]){
     printf("Cyphervalue in Alphabetical Value: %i\n", cypherlatteralpha);
 
     //reconvert from Alphaletter to Ascii value
-    int cypherlatterasci = cypherlatteralpha +65;
-    printf("Cyphervalue in Asci Value: %i\n",cypherlatterasci);
+    char cypherlatterasci = cypherlatteralpha +65;
+    printf("Cyphervalue in Asci Value: %c\n",cypherlatterasci);
     }
 
 
